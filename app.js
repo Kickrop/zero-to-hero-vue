@@ -6,6 +6,11 @@ const app = new Vue({
         vue:
             'Vue.js is an open-source JavaScript framework for building user interfaces.',
         selected: '',
+        messages: [
+            {text: 'Hello world'},
+            {text: 'You are cool!'},
+            {text: 'twitter.com/hui'},
+         ],
         },
     methods: {
         logMessage() {

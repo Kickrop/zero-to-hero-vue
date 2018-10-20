@@ -13,7 +13,7 @@
     <button v-on:click="logMessage">Click me!</button> <!-- @click -->
     <button @click="toggleMessage">Toggle message</button>
     <form>
-        <input v-model="message" type="text"/>
+        <input v-model.trim="message" type="text"/>
         <input v-model="hasMessage" type="checkbox"/>
         <div>
             <select v-model="selected" name="" id="">
@@ -25,6 +25,11 @@
             <span>Selected: {{ selected }}</span>
         </div>
     </form>
+    <ul>
+        <li v-for="message in messages" :key="message.id">
+            {{message.text}}
+        </li>
+    </ul>
 </div>
 
 <body>
