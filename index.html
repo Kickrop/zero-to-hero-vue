@@ -12,6 +12,19 @@
     <span v-if="hasMessage" :title="vue">{{message}}</span>
     <button v-on:click="logMessage">Click me!</button> <!-- @click -->
     <button @click="toggleMessage">Toggle message</button>
+    <form>
+        <input v-model="message" type="text"/>
+        <input v-model="hasMessage" type="checkbox"/>
+        <div>
+            <select v-model="selected" name="" id="">
+                <option disabled value="">What's your favorite coffe?</option>
+                <option>cafe latte</option>
+                <option>cappuccino</option>
+                <option>frappuccino</option>
+            </select>
+            <span>Selected: {{ selected }}</span>
+        </div>
+    </form>
 </div>
 
 <body>
