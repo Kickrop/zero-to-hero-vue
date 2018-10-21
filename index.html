@@ -8,6 +8,8 @@
 </head>
 
 <div id="app">
+    <navbar></navbar>
+    
     <!--<span v-bind:title="vue">{{message}}</span> <!-- or :title -->
     <span v-if="hasMessage" :title="vue">{{message}}</span>
     <button v-on:click="logMessage">Click me!</button> <!-- @click -->
@@ -30,6 +32,7 @@
             {{message.text}}
         </li>
     </ul>
+    <counter></counter>
 </div>
 
 <body>
