@@ -5,6 +5,7 @@ const app = new Vue({
         hasMessage: true,
         vue:
             'Vue.js is an open-source JavaScript framework for building user interfaces.',
+        selected: '',
     },
     methods: {
         logMessage() {
