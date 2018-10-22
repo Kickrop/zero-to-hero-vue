@@ -4,40 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ZTOHWV</title>
 </head>
 
-<div id="app">
-    <navbar></navbar>
-    
-    <!--<span v-bind:title="vue">{{message}}</span> <!-- or :title -->
-    <span v-if="hasMessage" :title="vue">{{message}}</span>
-    <button v-on:click="logMessage">Click me!</button> <!-- @click -->
-    <button @click="toggleMessage">Toggle message</button>
-    <form>
-        <input v-model.trim="message" type="text">
-        <input v-model="hasMessage" type="checkbox">
-        <div>
-            <select v-model="selected" name="" id="">
-                <option disabled="" value="">What's your favorite coffe?</option>
-                <option>cafe latte</option>
-                <option>cappuccino</option>
-                <option>frappuccino</option>
-            </select>
-            <span>Selected: {{ selected }}</span>
-        </div>
-    </form>
-    <ul>
-        <li v-for="message in messages" :key="message.id">
-            {{message.text}}
-        </li>
-    </ul>
-    <counter></counter>
-</div>
 
 <body>
-    
+    <div id="app"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
 <script src="/app.c328ef1a.js"></script>
+
 </html>
